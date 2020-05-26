@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="MySQL - m3_finalexam@localhost" uuid="375b4cc1-6fb1-430c-97ae-eb6a39ce82a3">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/m3_finalexam</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="m3_finalexam@localhost" uuid="27961873-afb0-4543-b695-3d36514d5be6">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/m3_finalexam</jdbc-url>
+    </data-source>
+  </component>
+</project>
