@@ -21,7 +21,7 @@
 <h3> Product List </h3>
 <h4></h4>
 <p>
-    <a href="/product?action=create"> Add new product</a
+    <a href="/product?action=create"> Add new product</a>
 </p>
 <p>
     <a href="/product?action=search"> Search product by ID </a>

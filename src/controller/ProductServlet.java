@@ -86,8 +86,8 @@ public class ProductServlet extends HttpServlet {
     private void insertProduct(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
         String name = request.getParameter("name");
-        int price = Integer.parseInt(request.getParameter("price"));
-        int quantity = Integer.parseInt(request.getParameter("quantity"));
+        String price = request.getParameter("price");
+        String quantity = request.getParameter("quantity");
         String color = request.getParameter("color");
         String des = request.getParameter("des");
         String category = request.getParameter("category");
@@ -122,12 +122,11 @@ public class ProductServlet extends HttpServlet {
     }
 
     private void showEditForm(HttpServletRequest request, HttpServletResponse response)
-            throws SQLException, ServletException, IOException {
+            throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
-        // User existingUser = userDAO.selectUser(id);
         Product existingProduct = productDAO.getProductById(id);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("view/edit.jsp");
-        request.setAttribute("user", existingProduct);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/editProduct.jsp");
+        request.setAttribute("product", existingProduct);
         dispatcher.forward(request, response);
     }
 
@@ -135,8 +134,8 @@ public class ProductServlet extends HttpServlet {
             throws SQLException, IOException, ServletException {
         int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
-        int price = Integer.parseInt(request.getParameter("price"));
-        int quantity = Integer.parseInt(request.getParameter("quantity"));
+        String price = request.getParameter("price");
+        String quantity = request.getParameter("quantity");
         String color = request.getParameter("color");
         String des = request.getParameter("des");
         String category = request.getParameter("category");

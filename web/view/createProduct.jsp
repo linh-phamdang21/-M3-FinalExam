@@ -20,7 +20,7 @@
 </div>
 <div align="center">
     <form method="post">
-        <table class="table">
+        <table class="table table-striped">
             <caption>
                 <h2>Add New Product</h2>
             </caption>

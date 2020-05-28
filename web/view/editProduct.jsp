@@ -18,51 +18,58 @@
     </h2>
 </div>
 <div style="width: 80%; margin: auto">
-    <form method="post">
+    <form>
         <table class="table table-striped">
             <tr>
-                <td> ID </td>
-                <td> Name </td>
-                <td> Price </td>
-                <td> Quantity </td>
-                <td> Color </td>
-                <td> Category </td>
+                <td> Name</td>
+                <td>
+                    <input type="text" name="country" size="25"
+                           value="${product.name}"/>
+                </td>
             </tr>
-            <c:forEach  var="product" items="${productList}">
-                <tr>
-                    <td>
-                        <input type="text" name="country" size="25"
-                                value="${product.name}"/>
-                    </td>
-                    <td>
-                        <input type="text" name="country" size="25"
-                               value="${product.price}"/>
-                    </td>
-                    <td>
-                        <input type="text" name="country" size="25"
-                               value="${product.quantity}"/>
-                    </td>
-                    <td>
-                        <input type="text" name="country" size="25"
-                               value="${product.color}"/>
-                    </td>
-                    <td>
-                        <input type="text" name="country" size="25"
-                               value="${product.category}"/>
-                    </td>
-                    <td>
-                        <input type="text" name="country" size="25"
-                               value="${product.des}"/>
-                    </td>
-                </tr>
-                <tr>
-                <tr>
-                    <td colspan="2" align="center">
-                        <input type="submit" value="Save"/>
-                    </td>
-                </tr>
-                </tr>
-            </c:forEach>
+            <tr>
+                <td> Price</td>
+                <td>
+                    <input type="text" name="country" size="25"
+                           value="${product.price}"/>
+                </td>
+            </tr>
+            <tr>
+                <td> Quantity</td>
+                <td>
+                    <input type="text" name="country" size="25"
+                           value="${product.quantity}"/>
+                </td>
+            </tr>
+            <tr>
+                <td> Color</td>
+                <td>
+                    <input type="text" name="country" size="25"
+                           value="${product.color}"/>
+                </td>
+            </tr>
+            <tr>
+                <td> Category</td>
+                <td>
+                    <input type="text" name="country" size="25"
+                           value="${product.category}"/>
+                </td>
+            </tr>
+            <tr>
+                <td> Description</td>
+                <td>
+                    <input type="text" name="country" size="25"
+                           value="${product.des}"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Update"/>
+                    <form method="get" action="product">
+                        <input type="submit" value="Back"/>
+                    </form>
+                </td>
+            </tr>
         </table>
     </form>
 </div>
